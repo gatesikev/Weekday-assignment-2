@@ -3,30 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
     <title>Campus Information</title>
 </head>
 <body>
-    <header class="header-cotainer">
-        <div class="logo">
-            <h1>Campus Information</h1>
-        </div>
-        <div class="nav-bar">
-            <ul class="nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#locations">Locations</a></li>
-            <ul class="dropdown">
-                <li><a href="#locations">Locality</a></li>
-                <li><a href="#gallery">Our gallery</a></li>
-            </ul>
+    <header class="header-container">
+    <div class="logo">
+        <h1>Campus Information</h1>
+    </div>
+
+    <nav class="nav-bar">
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+
+                <li class="dropdown">
+                    <a href="#locations">Locations</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#locality">Locality</a></li>
+                    <li><a href="#gallery">Our Gallery</a></li>
+                </ul>
+            </li>
+
             <li><a href="#news">Announcements</a></li>
             <li><a href="#conduct">Behavior</a></li>
-            </ul>
-        </div>
-    </header>
+        </ul>
+    </nav>
+</header>
+
    
     <!--Home-Section-->
+    <section id="home">
     <div class="first">
         <h1> Welcome to Campus Information Website</h1>
         <h2>Description</h2>
@@ -43,8 +50,9 @@
     <li>To guide new students and visitors</li>
     <li>To improve communication within the campus community</li>
 </ul>
-
+</section>
 <!--Services-->
+<section id="services">
 <div class="#services">
     <h1> Services</h1>
     <p> Here are the services we offer</p>
@@ -75,8 +83,10 @@
     <p>Students are equipped with technological skills as well </p> 
   </div>
 </div>
+</section>
 
 <!--Locality&Gallery-->
+<section id="locations">
 <section id="locality">
 <div class="loc">
     <h1> Locations</h1>
@@ -132,6 +142,7 @@
         </section>
     </main>
 <!--Our gallery-->
+<section id="gallery">
 <h1>Our Gallery</h1>
 <div class="gallery">
 
@@ -163,10 +174,11 @@
   <div class="desc">Hostels</div>
 </div>
 </div>
-
+</section>
 <!--Announcements--> 
+<section id="news">
 <section class="announcements">
-    <h2>Announcements & Notices</h2>
+    <h1>Announcements & Notices</h1>
 
     <p class="section-desc">
         This section displays important campus announcements and notices
@@ -190,10 +202,11 @@
         <p>A student leadership workshop will be held this Friday.</p>
     </div>
 </section>
-
+</section> 
 <!--Display section -->
+<section id="conduct">
 <section class="display-behavior">
-    <h2>Display Behavior</h2>
+    <h1>Display Behavior</h1>
 
     <p class="section-desc">
         This section demonstrates different ways content can be displayed
@@ -212,7 +225,7 @@
         I am transparent but still take up space.
     </div>
 </section>
-
+</section>
 <footer class="last">
         <p>&copy; 2026 Campus Information. All rights reserved</p>
     </footer>

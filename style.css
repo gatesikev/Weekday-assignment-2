@@ -9,47 +9,82 @@ body {
     background-color: #f4f4f4;
     line-height: 1.6;
 }
-
-header {
-    background-color: #003366;
+h1{
+    margin: 0;
+}
+/* ===== HEADER ===== */
+.header-container {
+    background-color: #003366; /* Dark blue */
+    padding: 10px 30px;
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul {
+/* Logo */
+.logo h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+
+/* ===== NAVIGATION ===== */
+.nav-bar ul.nav {
     list-style: none;
     display: flex;
-    padding: 15px;
-    gap: 20px;
+    gap: 20px; /* Space between main menu items */
+    align-items: center;
 }
 
-nav a {
-    color: white;
+.nav-bar ul.nav li {
+    position: relative; /* Needed for dropdown positioning */
+}
+
+/* Links */
+.nav-bar ul.nav li a {
     text-decoration: none;
+    color: white;
     font-weight: bold;
+    padding: 5px 10px;
 }
 
-nav li {
-    position: relative;
+.nav-bar ul.nav li a:hover {
+    color: #fbc531; /* Highlight on hover */
 }
 
-/* Dropdown */
+/* ===== DROPDOWN ===== */
+.nav-bar ul.nav li.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #00509e;
-    top: 35px;
-    min-width: 150px;
+    top: 35px; /* Just below main menu item */
+    left: 0;
+    background-color: #00509e; /* Lighter blue */
+    list-style: none;
+    padding: 10px 0;
+    min-width: 160px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.dropdown-menu li {
-    padding: 10px;
-}
-
-.dropdown:hover .dropdown-menu {
+/* Dropdown links */
+.dropdown-menu li a {
     display: block;
+    padding: 8px 15px;
+    color: white;
 }
+
+.dropdown-menu li a:hover {
+    background-color: #1e6bb8; /* Highlight submenu items */
+}
+
 
 .first {
     padding: 30px;
@@ -155,8 +190,15 @@ nav li {
 }
 
 footer {
-    text-align: center;
-    background: #003366;
+    background-color: #003366;
     color: white;
+    text-align: center;
     padding: 15px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+h1{
+    color: #003366;
+    text-align: center;
 }
