@@ -82,3 +82,13 @@ nav li {
     text-align: center;
     border-radius: 5px;
 }
+
+#locality {
+    padding: 30px;
+    background: #e9eef3;
+}
+
+.map iframe {
+    width: 100%;
+    margin-top: 10px;
+}
