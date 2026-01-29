@@ -133,3 +133,30 @@ nav li {
     background-color: #fff3cd;
     border-left-color: #ff9900;
 }
+
+#conduct {
+    padding: 30px;
+}
+
+.box {
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #ddd;
+}
+
+/* Hidden element */
+.hidden-box {
+    display: none;
+}
+
+/* Still visible but transparent */
+.transparent-box {
+    opacity: 0.4;
+}
+
+footer {
+    text-align: center;
+    background: #003366;
+    color: white;
+    padding: 15px;
+}
