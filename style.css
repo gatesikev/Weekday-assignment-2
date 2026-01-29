@@ -92,3 +92,44 @@ nav li {
     width: 100%;
     margin-top: 10px;
 }
+
+#gallery {
+    padding: 30px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item {
+    background: white;
+}
+
+.gallery-item img {
+    width: 100%;
+}
+
+.desc {
+    text-align: center;
+    padding: 10px;
+}
+
+#news {
+    padding: 30px;
+}
+
+.notice {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid #003366;
+}
+
+.notice.sticky {
+    position: sticky;
+    top: 80px;
+    background-color: #fff3cd;
+    border-left-color: #ff9900;
+}
