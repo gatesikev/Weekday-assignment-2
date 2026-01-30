@@ -64,6 +64,16 @@ font-weight: bold;
 }
 
 /* Content Box */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 26px;
+    }
+
+    #home .first {
+        padding: 20px;
+    }
+}
+
 #home .first {
     max-width: 800px;
     background: rgba(0, 0, 0, 0.6);
@@ -75,14 +85,14 @@ font-weight: bold;
 #home h1 {
     font-size: 36px;
     margin-bottom: 15px;
-    color: #ffdd00;
+    color: rgb(196, 214, 32);
 }
 
 /* Subtitles */
 #home h2 {
     font-size: 22px;
     margin-top: 20px;
-    color: #00ccff;
+    color: #64d4ed;
 }
 
 /* Paragraphs */
@@ -164,3 +174,136 @@ font-weight: bold;
     color: #555;
 }
 
+
+/* Locations main title section */
+#locations {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+}
+
+/* Intro box */
+.loc {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.loc h1 {
+    font-size: 32px;
+    color: #003366;
+}
+
+.loc p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Locality section */
+.locality {
+    background-color: white;
+    padding: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+.locality h2 {
+    font-size: 26px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.locality h3 {
+    font-size: 20px;
+    color: #0055aa;
+    margin-top: 20px;
+}
+
+/* Paragraphs */
+.locality p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* List */
+.locality ul {
+    margin-left: 20px;
+}
+
+.locality ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Map container */
+.map {
+    margin: 15px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+}
+
+/* Gallery section */
+#gallery {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#gallery h1 {
+    font-size: 30px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+/* Gallery grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Gallery cards */
+.gallery-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+/* Hover effect */
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Images */
+.gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Description */
+.desc {
+    padding: 10px;
+    font-weight: bold;
+    color: #333;
+}
+@media (max-width: 768px) {
+
+    .loc h1 {
+        font-size: 24px;
+    }
+
+    .locality {
+        padding: 20px;
+    }
+
+    .gallery-item img {
+        height: 150px;
+    }
+}
