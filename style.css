@@ -307,3 +307,84 @@ font-weight: bold;
         height: 150px;
     }
 }
+
+/* Announcements Section */
+#news {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+}
+
+/* Container */
+.announcements {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Title */
+.announcements h1 {
+    font-size: 30px;
+    color: #003366;
+}
+
+/* Description */
+.section-desc {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Notices Layout */
+.announcements-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+/* Notice Card Style */
+.notice {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 6px solid #0055aa;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+/* Make notices visually stand out */
+.notice h3 {
+    color: #003366;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.notice p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* 🔴 Sticky Important Notice */
+.sticky-notice {
+    position: sticky;
+    top: 80px; /* stays visible when scrolling */
+    border-left: 6px solid red;
+    background-color: #fff3f3;
+    z-index: 10;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+
+    /* Disable sticky on small screens */
+    .sticky-notice {
+        position: static;
+    }
+
+    .announcements h1 {
+        font-size: 24px;
+    }
+
+    .notice {
+        padding: 15px;
+    }
+}
