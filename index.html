@@ -12,23 +12,19 @@
         <h1>Campus Information</h1>
     </div>
 
-    <nav class="nav-bar">
-        <ul class="nav">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-
-                <li class="dropdown">
-                    <a href="#locations">Locations</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#locality">Locality</a></li>
-                    <li><a href="#gallery">Our Gallery</a></li>
-                </ul>
-            </li>
-
-            <li><a href="#news">Announcements</a></li>
-            <li><a href="#conduct">Behavior</a></li>
-        </ul>
-    </nav>
+   <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <div class="dropdown">
+      <a href="#location">Locations</a>
+      <div class="drop-menu">
+       <a href="#locality">Locality</a>
+       <a href="#gallery">Our Gallery</a>
+      </div>
+      </div>
+    <a href="#news">Announcements</a>
+    <a href="#behavior">Display</a>
+   </div>
 </header>
 
    
@@ -52,38 +48,52 @@
 </ul>
 </section>
 <!--Services-->
+<!-- Services Section -->
 <section id="services">
-<div class="#services">
-    <h1> Services</h1>
-    <p> Here are the services we offer</p>
-    <div class="card">
-        <img src="class.jpg" alt="Avatar" style="width:100%">
-        <div class="container">
-    <h4><b>Lectures</b></h4> 
-    <p>We equip our students with invaluable skills</p> 
-  </div>
+    <h1>Services</h1>
+    <p>Here are the services we offer</p>
 
-<img src="library.jpg" alt="Avatar" style="width:100%">
-        <div class="container">
-    <h4><b>Library</b></h4> 
-    <p>We have libraries which allows student to make research  </p> 
-  </div> 
-  
-  <img src="health center.jpg" alt="Avatar" style="width:100%">
-        <div class="container">
-    <h4><b>Health centers</b></h4> 
-    <p>We all get sick, that's why we've got our students covered  </p> 
-  </div> 
-  
-  
-  
-  <img src="labcomp.jpg" alt="Avatar" style="width:100%">
-        <div class="container">
-    <h4><b>Computer Labs</b></h4> 
-    <p>Students are equipped with technological skills as well </p> 
-  </div>
-</div>
+    <div class="services-container">
+
+        <!-- Card 1 -->
+        <div class="service-card">
+            <img src="class.jpg" alt="Lectures">
+            <div class="card-content">
+                <h4>Lectures</h4>
+                <p>We equip our students with invaluable skills.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card">
+            <img src="library.jpg" alt="Library">
+            <div class="card-content">
+                <h4>Library</h4>
+                <p>We have libraries that allow students to do research.</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card">
+            <img src="health center.jpg" alt="Health Center">
+            <div class="card-content">
+                <h4>Health Centers</h4>
+                <p>We ensure students get medical support when needed.</p>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card">
+            <img src="labcomp.jpg" alt="Computer Labs">
+            <div class="card-content">
+                <h4>Computer Labs</h4>
+                <p>Students gain technological and digital skills.</p>
+            </div>
+        </div>
+
+    </div>
 </section>
+
 
 <!--Locality&Gallery-->
 <section id="locations">
