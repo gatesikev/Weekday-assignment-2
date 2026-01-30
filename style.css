@@ -14,7 +14,7 @@ body {
 }
     
 header{
-    background-color: rgb(1, 15, 46);
+    background-color: #003366;
     color: white;
     padding: 30px;
     display: flex;
@@ -41,10 +41,6 @@ font-weight: bold;
     border-radius: 6px;
 }
 
-.dropdown{
-
-
-}
 
 .dropdown .drop-menu{
    border: none;
@@ -85,7 +81,7 @@ font-weight: bold;
 #home h1 {
     font-size: 36px;
     margin-bottom: 15px;
-    color: rgb(196, 214, 32);
+    color: #ceed1e;
 }
 
 /* Subtitles */
@@ -386,5 +382,123 @@ font-weight: bold;
 
     .notice {
         padding: 15px;
+    }
+}
+
+/* Display Behavior Section */
+#conduct {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+}
+
+.display-behavior {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Title */
+.display-behavior h1 {
+    font-size: 30px;
+    color: #003366;
+}
+
+/* Description */
+.display-behavior .section-desc {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Box Style */
+.box {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Visible box */
+.visible-box {
+    background-color: #d4edda;
+    color: #155724;
+    display: block; /* visible */
+}
+
+/* Hidden completely (removed from layout) */
+.hidden-box {
+    background-color: #f8d7da;
+    color: #721c24;
+    display: none; /* NOT visible and no space */
+}
+
+/* Transparent but space remains */
+.transparent-box {
+    background-color: #cce5ff;
+    color: #004085;
+    visibility: hidden; /* hidden but space remains */
+}
+
+/* Responsive element */
+.responsive-box {
+    background-color: #fff3cd;
+    color: #856404;
+    display: block;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+
+    /* Hide this box on phones */
+    .responsive-box {
+        display: none;
+    }
+
+    .display-behavior h1 {
+        font-size: 24px;
+    }
+}
+
+/* Footer Section */
+.footer {
+    background-color: #003366;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+/* Footer layout */
+.footer-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Left side */
+.footer-left h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* Right side */
+.footer-right p {
+    font-size: 14px;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
     }
 }
